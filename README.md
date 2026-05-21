@@ -1,63 +1,94 @@
-# Library Management System
+# Library Management System in C
 
-## Overview
+A console-based Library Management System developed using the C programming language to manage books, records, and library operations efficiently.
 
-The **Library Management System** is a robust command-line application developed in **C**. It is designed to simplify and streamline book inventory management, enhancing library operations. This project demonstrates the practical application of file handling, data structures, and algorithms in C programming.
+## Project Overview
 
-## Features
+This project demonstrates file handling, structures, functions, and data management concepts in C programming.
 
-- **Add Books**: Add new books to the library database with details like ID, title, author, and quantity.
-- **Delete Books**: Remove books from the library collection using their unique ID.
-- **Search Books**: Search for books by ID, title, or author with intuitive query functionality.
-- **Check Availability**: Verify the availability of specific books by ID.
-- **Display Books**: View all books in the library in a formatted tabular display.
-- **Save and Load Data**: Persistent storage using a CSV file to save and load book records.
+The system allows users to:
 
-## How to Use
+* Add books
+* Search books
+* Delete records
+* Issue and return books
+* Manage library inventory
 
-### Prerequisites
-- A C compiler (e.g., GCC).
-- Basic knowledge of command-line interfaces.
+---
 
-### Usage
-1. On running the program, a main menu is displayed with the following options:
-   - Display all books
-   - Add a book
-   - Search for a book
-   - Check book availability
-   - Delete a book
-   - Save and exit
-2. Input the number corresponding to your desired operation.
-3. Follow the prompts to perform actions like adding or searching for books.
-4. All changes are automatically saved to the `library.csv` file.
+# Features
 
-## File Structure
+* Book record management
+* Search functionality
+* File handling using CSV/Text files
+* Console-based interface
+* Structured programming approach
+* Data storage and retrieval
 
-- **`Library_Management_System.c`**: The main source code of the application.
-- **`library.csv`**: A CSV file used for persistent storage of book records.
-- **`Library_Management_System_REPORT.pdf`**: A detailed project report explaining the implementation and testing of the system.
+---
 
-## Key Functions
+# Technologies Used
 
-- **`loadBooks`**: Loads book records from the CSV file.
-- **`saveBooks`**: Saves the current state of the book inventory to the CSV file.
-- **`addBook`**: Adds a new book to the inventory.
-- **`searchBook`**: Searches for a book by ID, title, or author.
-- **`checkAvailability`**: Checks if a specific book is available for borrowing.
-- **`deleteBook`**: Removes a book from the inventory.
-- **`displayBooks`**: Displays all books in a tabular format.
+* C Programming
+* File Handling
+* Structures
+* Functions
+* Visual Studio 2022
 
-## Performance Highlights
+---
 
-- Improved operational efficiency by 25% through streamlined book inventory management.
-- Enhanced usability with a user-friendly command-line interface.
-- Reduced errors in book tracking by 15% through rigorous testing and validation.
+# Core Concepts Implemented
 
-## Author
+## Structures
 
-**Deep Patel**
-- Computer Engineering Technology Student
-- [GitHub Profile](https://github.com/yourusername)
+```c id="g7n2x4"
+struct Book {
+    int id;
+    char title[50];
+    char author[50];
+};
+```
 
-Feel free to explore, modify, and contribute to this project!
+## File Handling
 
+```c id="b9m4k8"
+FILE *fp;
+fp = fopen("library.csv", "r");
+```
+
+## Functions
+
+* Add Book
+* Delete Book
+* Search Book
+* Display Records
+
+---
+
+# Future Improvements
+
+* Add graphical user interface
+* Add user authentication
+* Implement database integration
+* Add overdue fine calculations
+* Convert to web-based application
+
+---
+
+# Learning Outcomes
+
+This project helped improve understanding of:
+
+* File handling in C
+* Data structures
+* Menu-driven applications
+* Real-world problem solving
+* Modular programming
+
+---
+
+# Author
+
+Daksh Patel
+
+*Enhanced and customized library management system project using C programming and file handling concepts.*
